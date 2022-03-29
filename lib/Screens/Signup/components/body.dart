@@ -27,10 +27,26 @@ class Body extends StatelessWidget {
               "assets/icons/Capture.svg",
               height: size.height * 0.18,
             ),
+            
             SizedBox(height: size.height * 0.03),
+            Text(
+              "Email",
+              style: TextStyle(fontWeight: FontWeight.bold),
+            ),
             RoundedInputField(
               hintText: "Your Email",
               onChanged: (value) {},
+            ),
+            Text(
+              "Password",
+              style: TextStyle(fontWeight: FontWeight.bold),
+            ),
+            RoundedPasswordField(
+              onChanged: (value) {},
+            ),
+            Text(
+              "Re-Type Password",
+              style: TextStyle(fontWeight: FontWeight.bold),
             ),
             RoundedPasswordField(
               onChanged: (value) {},
